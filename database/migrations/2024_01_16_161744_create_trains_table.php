@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('departure_station');
             $table->string('train_code');
             $table->tinyInteger('cart_number')->unsigned();
-            $table->boolean('on_time');
             $table->boolean('cancelled');
-            $table->time('arrive_time');
-            $table->time('departure_time');
+            $table->boolean('on_time');
+            $table->dateTime('arrive_time');
+            $table->dateTime('departure_time');
             $table->timestamps();
         });
     }
