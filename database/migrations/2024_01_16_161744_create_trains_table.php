@@ -20,8 +20,8 @@ return new class extends Migration
             $table->tinyInteger('cart_number')->unsigned();
             $table->boolean('cancelled');
             $table->boolean('on_time');
-            $table->dateTime('arrive_time');
             $table->dateTime('departure_time');
+            $table->dateTime('arrive_time');
             $table->timestamps();
         });
     }
